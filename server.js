@@ -4,7 +4,7 @@ import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 const app = express(),
-      port = 3080,
+      port = process.env.PORT || 3080,
       __dirname = process.cwd();
 
 // place holder for the data
